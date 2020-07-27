@@ -28,7 +28,7 @@ export default class Header extends Component {
       </ImageBackground>
     );
   }
-}
+} 
 
 const styles = StyleSheet.create({
   headerbg: {
