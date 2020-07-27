@@ -24,11 +24,20 @@ export default class Header extends Component {
 
         />
         </View>
+
+        <Text style = {styles.name}>
+        Hitesh choudhary
+        </Text>
+
+        <Text style = {styles.linear}>
+        Part time photographer.
+        </Text>
+
          </View>
       </ImageBackground>
     );
   }
-} 
+}
 
 const styles = StyleSheet.create({
   headerbg: {
@@ -42,11 +51,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
+    backgroundColor: 'rgba(0,0,0,0.6)',
 
   },
   profilepiccontainer:{
     width:180,
     height:180,
+
   },
   mypic: {
     flex:1,
@@ -56,5 +67,17 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: '#fff'
 
+  },
+  name:{
+    marginTop: 18,
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold'
+  },
+  linear:{
+    marginTop: 5,
+    color: '#fff',
+    fontSize: 15,
+    fontStyle: 'italic',
   }
 });
